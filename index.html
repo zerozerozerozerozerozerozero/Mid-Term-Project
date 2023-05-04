@@ -3,38 +3,53 @@
   <head>
     <title>자기소개 페이지</title>
     <style>
-      
+
+      /* 폰트 지정 */
+      @font-face {
+        font-family: 'PlayfairDisplay-ExtraBold';
+        src: url('https://raw.githubusercontent.com/zerozerozerozerozerozerozero/mid-term-project/master/PlayfairDisplay-ExtraBold.ttf') format('truetype');    
+      }
+
       /* 페이지의 배경 색상 */
       body {
-        background-color: #03213e;
+        background-image: url('https://github.com/zerozerozerozerozerozerozero/mid-term-project/blob/master/ezgif.com-gif-maker.gif?raw=true');
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         color:#fff;
       }
 
 
       /* 제목의 색상과 폰트 */
       h1 {
-        color: #03213e;
-        font-family: Arial, sans-serif;
+        font-family: 'PlayfairDisplay-ExtraBold', sans-serif;
+        color: #000000;
+        font-size: 45px;
         margin-top: 50px;
         margin-bottom: 30px;
         text-shadow:
-          -3px -3px 0 #eeefff,
-          3px -3px 0 #eeefff,
-          -3px 3px 0 #eeefff,
-          3px 3px 0 #eeefff;
+         -1px -1px 0 #eeefff,
+          1px -1px 0 #eeefff,
+          -1px 1px 0 #eeefff,
+          1px 1px 0 #eeefff;
       }
 
       /* 소제목의 스타일 */
       h2 {
-        color: #f109b0;
-        font-size: 24px;
+        font-family: 'PlayfairDisplay-ExtraBold', sans-serif;
+        color: #000000;
+        font-size: 35px;
         font-weight: bold;
         margin-top: 40px;
         margin-bottom: 20px;
+        text-shadow:
+          -1px -1px 0 #eeefff,
+          1px -1px 0 #eeefff,
+          -1px 1px 0 #eeefff,
+          1px 1px 0 #eeefff;
       }
 
       /* 본문의 스타일 */
@@ -49,7 +64,7 @@
         max-width: 150px;
         display: block;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 50px;
         border-radius: 50%;
         border: 8px double rgb(251, 251, 251);
@@ -66,15 +81,18 @@
       
       /* 버튼 스타일 */
       button {
-        background-color: #03213e;
-        color: #fff;
+        font-family: 'PlayfairDisplay-ExtraBold', sans-serif;
+        background-color: rgba(255, 255, 255, 0.068); /* 버튼 배경색, 투명도 조절 가능 */
         border: none;
-        border-radius: 5px;
-        font-family: Arial, sans-serif;
-        font-size: 18px;
-        padding: 10px 20px;
-        margin-right: 10px; /* 버튼 사이의 간격을 주기 위해 추가 */
-        cursor: pointer;
+        color: white;
+        padding: 1rem 2rem; /* 버튼 내용에 따라 조절 가능 */
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* 그림자 효과, 투명도 조절 가능 */
+        backdrop-filter: blur(10px); /* 배경 흐림 효과 */
+        margin-right: 10px;
+        transition: background-color 0.3s, box-shadow 0.3s;
     }
 
       /* 버튼들을 가로로 정렬 */
@@ -84,13 +102,14 @@
       }
 
       button:hover {
-        background-color: #ff00c8;
+        background-color: #505050cc;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.748);
       } 
 
       .homee {
             position: absolute;
             top: 250px;
-            left: 700px;
+            left: 750px;
             }   
 
     </style>
@@ -125,7 +144,7 @@
     </div>
 
     <div id="home" class="section active">
-        <img src="https://github.com/zerozerozerozerozerozerozero/mid-term-project/blob/master/%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg?raw=true" alt="프로필 사진" style="position:absolute; top:37%; left:30%; transform:translate(-50%, -50%);">
+        <img src="https://github.com/zerozerozerozerozerozerozero/mid-term-project/blob/master/%EC%A6%9D%EB%AA%85%EC%82%AC%EC%A7%84.jpg?raw=true" alt="프로필 사진" style="position:absolute; top:37%; left:40%; transform:translate(-50%, -50%);">
         <p class="homee">이름 : 한예진<br>
             학과 : 정보통계학과<br>
             나이 : 22<br>
